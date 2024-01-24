@@ -1,0 +1,74 @@
+.black-bg-crooked-wrapper {
+  background-image: url('./assets/blackbgcrooked.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.black-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  width: 100%;
+}
+
+.aboutme{
+  padding-top: 80px;
+}
+
+.header-projects{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center
+}
+
+.header-projects h1 {
+  color: #fff;
+  font-size: 64px;
+font-style: bold;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.projects-highlighth1 {
+  color: #FF4820;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.sort-dropdown {
+  padding: 20px 0px 0px 100px;
+}
+
+.sort-dropdown select {
+  border-radius: 25px 25px 25px 25px;
+  width: 200px;
+  height: 40px;
+  background-color: #FF4820;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.sort-dropdown select option {
+  background-color: #FF4820;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #fff;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}

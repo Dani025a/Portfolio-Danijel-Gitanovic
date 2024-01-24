@@ -1,0 +1,276 @@
+
+.about-me-portrait_circle{ 
+border-radius: 400px;
+border: 1px solid #000;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+width: 300px;
+height: 300px;
+background: url('../../assets/Me.png') center/cover no-repeat;
+flex-shrink: 0;
+}
+
+.about-me-container_one{
+    position: relative;
+    margin-top:100px;
+    
+}
+
+.bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100x;
+    transform: translate(-50%, -60%);
+  }
+.about-me-container_two {
+    margin-top: 39px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.about-me-name_text {
+width: 443px;
+height: 114px;
+flex-shrink: 0;
+}
+
+.about-me-name_text h1{
+color: #FFF;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.about-me-description-text{
+    width: 435px;
+    height: 117px;
+    flex-shrink: 0;
+    }
+    
+    .about-me-description-text p{
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+.aboutme-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.about-me-job_text {
+    width: 435px;
+    height: 57px;
+    flex-shrink: 0;
+}
+
+.about-me-job-text h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Saira Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: #FF4820;
+font-family: "Saira Condensed";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.images {
+    display: inline-flex;
+align-items: flex-end;
+gap: 50px;
+padding-top: 30px;
+}
+
+.images img {
+    width: 50px;
+    
+}
+
+.aboutme-btn {
+    background-color: #FF4820;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.aboutme-btn-text {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.aboutme-btn:hover {
+    background-color: transparent;
+    border: 2px solid #FF4820;
+}
+
+.aboutme-btn:hover .nav-btn-text {
+    color: #FF4820;
+}
+
+.aboutme-btn-container{
+    width: 435px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .about-me-portrait_circle{ 
+        border-radius: 400px;
+        border: 1px solid #000;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 200px;
+        height: 200px;
+        background: url('../../assets/Me.png') center/cover no-repeat;
+        flex-shrink: 0;
+        }
+        
+    .aboutme-content {
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .about-me-container_one{
+        margin-top:40px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+        .bubble {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(-25%, -60%);
+        }
+        
+    .about-me-container_two {
+        margin-top: 10px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    .about-me-name_text {
+        width: 267px;
+        height: 60px;
+        flex-shrink: 0;
+        }
+        
+        .about-me-name_text h1{
+        color: #FFF;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        }
+        
+        .about-me-description-text{
+            width: 267px;
+            height: 120px;
+            flex-shrink: 0;
+            }
+            .aboutme-btn-container{
+                width: 267px;                
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            
+            }
+            
+            .about-me-description-text p{
+                color: #FFF;
+                text-align: center;
+                font-family: "Saira Condensed";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        
+        .aboutme-content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        
+        .about-me-job_text {
+            width: 267px;
+            height: 10px;
+            flex-shrink: 0;
+        }
+        
+        .about-me-job-text h2{
+            color: #FFF;
+            text-align: center;
+            font-family: "Saira Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        
+        .highlight {
+            color: #FF4820;
+        font-family: "Saira Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        }
+        
+        .images {
+            display: inline-flex;
+        align-items: flex-end;
+        gap: 30px;
+        padding-top: 30px;
+        }
+        .images img {
+            width: 40px;
+            
+        }
+
+        .bubble{
+        }
+}
+

@@ -1,0 +1,74 @@
+@keyframes shimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
+  
+  .project-card-loader {
+    width: 512px;
+    height: 750px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .images-loader,
+  .text-loader {
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+  }
+  
+  .images-loader {
+    width: 100%;
+    height: 326px;
+    border-radius: 25px 25px 0 0;
+    margin-bottom: 20px;
+  }
+  
+  .text-loader {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .name-loader {
+    width: 80%;
+    height: 38px;
+  }
+  
+  .description-loader {
+    width: 90%;
+    height: 130px;
+  }
+  
+  .line-loader {
+    width: 90%;
+    height: 1px;
+    background: #000;
+    margin: 20px 0;
+  }
+  
+  .tech-stack-loader {
+    width: 70%;
+    height: 50px;
+  }
+  
+  .github-loader {
+    width: 60%;
+    height: 40px;
+  }
+  

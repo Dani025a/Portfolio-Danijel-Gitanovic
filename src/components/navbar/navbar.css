@@ -1,0 +1,142 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    max-width: 1500px;
+}
+
+.nav-links.active {
+    color: #FF4820;
+}
+.nav-logo {
+    color: #FF4820;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-links {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-btn {
+    background-color: #FF4820;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-btn-text {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: transparent;
+    border: 2px solid #FF4820;
+}
+
+.nav-btn:hover .nav-btn-text {
+    color: #FF4820;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger-icon div {
+    background-color: #FFF;
+    height: 3px;
+    width: 100%;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: #333;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    
+}
+
+.mobile-menu.open {
+    left: 0;
+}
+
+.mobile-nav-menu {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.mobile-menu .nav-btn {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+@media screen and (max-width: 880px) {
+    .nav-menu, .nav-btn {
+        display: none;
+    }
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
