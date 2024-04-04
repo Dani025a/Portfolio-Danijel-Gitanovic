@@ -3,8 +3,6 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Timeline from './components/timeline/Timeline';
 import Skills from './components/skills/Skills';
 import './App.css';
-import blackbgcrooked from './assets/blackbgcrooked.svg';
-import blackbgstraight from './assets/blackbgstraight.svg';
 import useSmoothScroll from './useSmoothScroll.tsx';
 import { Project } from './hooks/useProjects.ts';
 import { useState } from 'react';
