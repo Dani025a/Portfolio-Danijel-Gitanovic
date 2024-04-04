@@ -1,5 +1,5 @@
 import React from 'react';
-import './SkillImages.css';
+import './skillImages.css';
 
 import typescriptLogo from '../../assets/Typescript.png';
 import javascriptLogo from '../../assets/JavaScript.png';
