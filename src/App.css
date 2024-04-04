@@ -1,7 +1,9 @@
-.black-bg-crooked-wrapper {
-  background-image: url('./assets/blackbgcrooked.svg');
+.black-bg-straight {
+  background-image: url('./assets/blackbgstraight.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 800px;
+  width: 100%;
 }
 
 .black-bg {
@@ -11,7 +13,6 @@
   min-height: 800px;
   width: 100%;
 }
-
 .aboutme{
   padding-top: 80px;
 }

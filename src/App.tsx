@@ -47,7 +47,7 @@ const App = () => {
         <div id='timeline'>
           <Timeline />
         </div>
-        <div className="black-bg" id='work'>
+        <div className="black-bg-straight" id='work'>
           <div className='header-projects'>
           <h1>My <span className="projects-highlighth1">Work</span></h1>
           </div>
