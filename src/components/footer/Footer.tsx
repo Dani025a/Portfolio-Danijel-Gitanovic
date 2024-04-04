@@ -7,7 +7,6 @@ import typescrpt from '../../assets/Typescript.png'
 import react from '../../assets/React.png'
 import nodejs from '../../assets/nodejs.png'
 import mysql from '../../assets/mysql.png'
-import azure from '../../assets/Azure.png'
 
 
 
