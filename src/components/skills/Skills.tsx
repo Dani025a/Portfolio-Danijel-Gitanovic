@@ -1,4 +1,3 @@
-import React from 'react'
 import SkillImages from '../skillImages/SkillImages'
 import './skills.css'
 

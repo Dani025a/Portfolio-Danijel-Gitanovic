@@ -21,7 +21,7 @@ export interface ProjectQuery {
 
 const App = () => {
   const [projectQuery, SetProejctQuery] = useState<ProjectQuery>({} as ProjectQuery);
-  const { data: icons, error} = useIcons();
+  const { data: icons} = useIcons();
   useSmoothScroll();
   
   const handleSortChange = (option: string) => {
