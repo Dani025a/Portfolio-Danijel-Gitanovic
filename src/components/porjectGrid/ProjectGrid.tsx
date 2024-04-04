@@ -1,4 +1,3 @@
-import React from 'react'
 import './projectGrid.css'
 import { ProjectQuery } from '../../App.ts';
 import ProjectCardLoader from '../projectCard/ProjectCardLoader.tsx';

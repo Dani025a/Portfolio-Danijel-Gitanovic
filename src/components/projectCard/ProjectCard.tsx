@@ -1,8 +1,9 @@
 
 import { useState } from 'react';
 import { Carousel, Modal } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './projectcard.css'
+import 'bootstrap/dist/css/bootstrap.css';
+
 import { Project } from '../../hooks/useProjects';
 
 interface Props { 
@@ -25,16 +26,16 @@ const ProjectCard = ({ project }: Props) =>
   return (
     <div className="project-card">
       <Carousel>
-        {project.images.map((image, index) => (
-          <Carousel.Item key={index}>
-            <img className='images-content'
-              src={image}
-              alt={`Slide ${index}`}
-              style={{ width: '100%', cursor: 'pointer' }}
-              onClick={() => openModal(image)}
-            />
-          </Carousel.Item>
-        ))}
+      {project.images.map((iamge, index) => (
+  <Carousel.Item key={index}>
+    <img className='images-content'
+         src={iamge.image} // Corrected
+         alt={`Slide ${index}`}
+         style={{ width: '100%', cursor: 'pointer' }}
+         onClick={() => openModal(iamge.image)}
+    />
+  </Carousel.Item>
+))}
       </Carousel>
       <div className='name-container'>
         <h1>{project.name}</h1>

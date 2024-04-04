@@ -118,3 +118,26 @@ text-transform: uppercase;
     color: black;
 
 }
+
+@media screen and (max-width: 768px) {
+    .project-card {
+      width: 100%;
+      height: auto;
+    }
+  
+    .images-content {
+      width: 100%;
+      height: auto;
+    }
+  
+    .name-container, .description-container, .line-divider, .languages, .github-btn-container {
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: calc(100% - 40px);
+    }
+  
+    .name-container, .description-container {
+      padding: 0 10px;
+    }
+  
+  }

@@ -31,28 +31,25 @@ flex-shrink: 0;
     justify-content: center;
 }
 
-
-.about-me-name_text {
-width: 443px;
-height: 114px;
-flex-shrink: 0;
+.about-me_text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 443px;
 }
+
+
 
 .about-me-name_text h1{
 color: #FFF;
-font-size: 64px;
+font-size: 60px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
 }
 
-.about-me-description-text{
-    width: 435px;
-    height: 117px;
-    flex-shrink: 0;
-    }
-    
+
     .about-me-description-text p{
         color: #FFF;
         text-align: center;
@@ -61,6 +58,7 @@ text-transform: uppercase;
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
+        margin-bottom: 10px
     }
 
 .aboutme-content {
@@ -69,11 +67,7 @@ text-transform: uppercase;
 }
 
 
-.about-me-job_text {
-    width: 435px;
-    height: 57px;
-    flex-shrink: 0;
-}
+
 
 .about-me-job-text h2{
     color: #FFF;
@@ -172,6 +166,13 @@ padding-top: 30px;
         align-items: center; 
         justify-content: center;
     }
+    .about-me_text-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 267px;    
+    }
+    
     
         .bubble {
           position: absolute;
@@ -187,26 +188,19 @@ padding-top: 30px;
         align-items: center; 
         justify-content: center;
     }
-    .about-me-name_text {
-        width: 267px;
-        height: 60px;
-        flex-shrink: 0;
-        }
+
         
         .about-me-name_text h1{
+
         color: #FFF;
-        font-size: 40px;
+        font-size: 37px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
         }
         
-        .about-me-description-text{
-            width: 267px;
-            height: 120px;
-            flex-shrink: 0;
-            }
+
             .aboutme-btn-container{
                 width: 267px;                
                 display: flex;
@@ -232,11 +226,7 @@ padding-top: 30px;
         }
         
         
-        .about-me-job_text {
-            width: 267px;
-            height: 10px;
-            flex-shrink: 0;
-        }
+
         
         .about-me-job-text h2{
             color: #FFF;

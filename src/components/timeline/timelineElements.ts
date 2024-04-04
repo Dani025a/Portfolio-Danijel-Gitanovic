@@ -1,0 +1,61 @@
+const timelineElements = [
+  {
+    id: 1,
+    title: "Software Development Program at KEA",
+    location: "Copenhagen, Denmark",
+    buttonText: "More Info",
+    description: "Studied databases, system integration, development of large systems, full-stack development, and AI/machine learning.",
+    date: "August 2023 - Present",
+    icon: "school",
+  },
+  {
+    id: 2,
+    title: "6-Week Course in C# Programming",
+    location: "Online",
+    buttonText: "Course Details",
+    description: "Covered programming fundamentals, web fundamentals, database fundamentals, software design and development fundamentals, programming in C#, and secure programming.",
+    date: "April 24, 2023 - June 3, 2023",
+    icon: "school",
+  },
+  {
+    id: 3,
+    title: "Internship at Watts A/S",
+    location: "Køge, Denmark",
+    buttonText: "Watts A/S Website",
+    description: "Worked on the Android app, performed maintenance tasks, and contributed to backend development using C# for microservices.",
+    date: "August 15, 2022 - October 21, 2022",
+    icon: "work",
+  },
+  {
+    id: 4,
+    title: "Bachelor's Degree in Computer Science from Zealand",
+    location: "Næstved, Denmark",
+    buttonText: "Program Details",
+    description: "Studied general topics, enterprise organization, system development, programming, and technology. Elective subjects included mobile development and machine learning.",
+    date: "September 2020 - January 2023",
+    icon: "school",
+  },
+  {
+    id: 5,
+    title: "Involvement in Hofor/Amagerbakke Project",
+    location: "Copenhagen, Denmark",
+    date: "2019 - 2020",
+    icon: "school",
+  },
+  {
+    id: 6,
+    title: "Work Experience at HBN-Teknik",
+    location: "Ringsted, Denmark",
+    date: "2017 - 2018",
+    icon: "school",
+  },
+  {
+    id: 7,
+    title: "Entrepreneurship Program at ZBC",
+    location: "Næstved, Denmark",
+    date: "August 2014 - June 2017",
+    icon: "school",
+  },
+];
+
+export default timelineElements;

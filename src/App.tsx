@@ -1,5 +1,6 @@
 import Navbar from './components/navbar/Navbar';
 import AboutMe from './components/aboutMe/AboutMe';
+import Timeline from './components/timeline/Timeline';
 import Skills from './components/skills/Skills';
 import './App.css';
 import blackbgcrooked from './assets/blackbgcrooked.svg';
@@ -7,11 +8,12 @@ import blackbgstraight from './assets/blackbgstraight.svg';
 import useSmoothScroll from './useSmoothScroll.tsx';
 import { Project } from './hooks/useProjects.ts';
 import { useState } from 'react';
-import useLanguages from './hooks/useLanguages.ts';
 import ProjectGrid from './components/porjectGrid/ProjectGrid.tsx';
+import useIcons from './hooks/useIcons.ts';
+import Footer from './components/footer/Footer.tsx';
 
 export interface ProjectQuery {
-  languageId?: number;
+  iconId?: number;
   product: Project | null;
   sortOrder: string;
 }
@@ -19,18 +21,17 @@ export interface ProjectQuery {
 
 const App = () => {
   const [projectQuery, SetProejctQuery] = useState<ProjectQuery>({} as ProjectQuery);
-  const { data: languages, error} = useLanguages();
+  const { data: icons, error} = useIcons();
   useSmoothScroll();
   
   const handleSortChange = (option: string) => {
-
     if (option === "All") {
-      SetProejctQuery({ ...projectQuery, languageId: null! })  
+      SetProejctQuery({ ...projectQuery, iconId: undefined });
+    } else {
+      SetProejctQuery({ ...projectQuery, iconId: parseInt(option) });
     }
-    
-    SetProejctQuery({ ...projectQuery, languageId: parseInt(option) })  
   };
-
+  
   return (
     <div>     
       <div>
@@ -43,21 +44,26 @@ const App = () => {
         <div id='skills'>
           <Skills />
         </div>
+        <div id='timeline'>
+          <Timeline />
+        </div>
         <div className="black-bg" style={{ backgroundImage: `url(${blackbgstraight})` }} id='work'>
           <div className='header-projects'>
           <h1>My <span className="projects-highlighth1">Work</span></h1>
-
           </div>
         <div className="sort-dropdown">
         <select onChange={(e) => handleSortChange(e.target.value)}>
           <option value={"All"}>All</option>
-          {Array.isArray(languages) && languages.map((language) => (
-            <option key={language.id} value={language.id}>{language.name}</option>
+          {Array.isArray(icons) && icons.map((icon) => (
+            <option key={icon.id} value={icon.id}>{icon.name}</option>
           ))}
         </select>
       </div>
+      <div className='projects-items'>
       <ProjectGrid productQuery={projectQuery}></ProjectGrid>
       </div>
+      </div>
+      <Footer></Footer>
       </div>
     </div>
   );

@@ -3,21 +3,21 @@ import { useQuery } from "@tanstack/react-query";
 import ms from "ms";
 
 
-export interface Language {
+export interface Icon {
   id: number;
   name: string;
   icon: string
 }
 
-const apiClient = new ApiClient<Language>("/languages");
+const apiClient = new ApiClient<Icon>("/icons");
 
 
-const useLanguages = () => {
+const useIcons = () => {
   return useQuery({
-    queryKey: ["languages"],
+    queryKey: ["icons"],
     queryFn: apiClient.getAll,
     staleTime: ms("5s"),
   });
 };
 
-export default useLanguages;
+export default useIcons;

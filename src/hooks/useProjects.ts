@@ -1,16 +1,28 @@
 import { useQuery } from "@tanstack/react-query";
-import ApiClient, { FetchResponse } from "../services/api-client";
+import ApiClient from "../services/api-client";
 import ms from "ms";
 import { ProjectQuery } from "../App";
 
 export interface Project {
-    name: string;
-    description: string;
-    images: string[];
-    techStack: { name: string; icon: string }[];
-    githubRepo: string;
-  }
-  
+  id: number;
+  name: string;
+  description: string;
+  githubRepo: string;
+  images: Images[];
+  techStack: TechStackItem[];
+}
+
+export interface TechStackItem {
+  id: number;
+  name: string;
+  icon: string;
+}
+
+export interface Images {
+  id: number;
+  image: string;
+}
+
 const apiClient = new ApiClient<Project>("/Projects");
 
 const useProjects = (projectQuery: ProjectQuery) => {
@@ -19,12 +31,11 @@ const useProjects = (projectQuery: ProjectQuery) => {
     queryFn: () =>
       apiClient.getAll({
         params: {
-          languageId: projectQuery.languageId,
+          iconId: projectQuery.iconId,
         },
       }),
     staleTime: ms("5s"),
   });
 };
-
 
 export default useProjects;

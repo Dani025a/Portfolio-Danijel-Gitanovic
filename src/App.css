@@ -59,16 +59,22 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 .sort-dropdown select option {
-  background-color: #FF4820;
   color: #fff;
   border: none;
   padding: 5px 10px;
   font-size: 16px;
-  background: #fff;
+  background: #FF4820;
   font-family: "Saira Condensed", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.projects-items {
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }

@@ -2,7 +2,7 @@ import './aboutMe.css';
 import ChatBubble from '../chatBubble/Chatbubble';
 import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
-import cv from '../../assets/Danijel Gitanovic CV - EN.pdf'; // Make
+import cv from '../../assets/Danijel Gitanovic CV - EN.pdf';
 
 
 const AboutMe = () => {
@@ -12,6 +12,7 @@ const AboutMe = () => {
       <div className='bubble'>
       <ChatBubble></ChatBubble>
       </div>
+      <div className='about-me_text-content'>
       <div className='about-me-name_text'>
         <h1>Danijel Gitanovic</h1>
         </div>
@@ -25,6 +26,7 @@ const AboutMe = () => {
       <button className='aboutme-btn'>
                     <a  href={cv} download="Danijel_Gitanovic_CV.pdf" className="aboutme-btn-text">Download CV</a>
                 </button>
+                </div>
                 </div>
       </div>
       <div className='about-me-container_two'> 
