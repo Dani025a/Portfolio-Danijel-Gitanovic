@@ -1,5 +1,5 @@
 .black-bg-straight {
-  background-image: url('./assets/blackbgstraight.svg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), #000000);  
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 800px;
@@ -7,9 +7,9 @@
 }
 
 .black-bg {
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), #000000);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
   background-repeat: no-repeat;
-  background-image: url('./assets/blackbgcrooked.svg');
   min-height: 800px;
   width: 100%;
 }

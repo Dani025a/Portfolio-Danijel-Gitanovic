@@ -33,8 +33,8 @@ const App = () => {
   return (
     <div>     
       <div>
+      <Navbar/>
         <div className="black-bg" id='about'>
-        <Navbar/>
         <div className='aboutme' id='aboutme'>
           <AboutMe />
           </div>
