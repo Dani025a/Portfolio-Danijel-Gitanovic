@@ -48,7 +48,6 @@ const Footer = () => {
           <img src={react}></img>
           <img src={nodejs}></img>
           <img src={mysql}></img>
-          <img src={azure}></img>
 
           </div>
                 </div>
