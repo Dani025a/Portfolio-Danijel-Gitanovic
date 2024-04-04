@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div>     
       <div>
-        <div className="black-bg" style={{ backgroundImage: `url(${blackbgcrooked})` }} id='about'>
+        <div className="black-bg" id='about'>
         <Navbar/>
         <div className='aboutme' id='aboutme'>
           <AboutMe />
@@ -47,7 +47,7 @@ const App = () => {
         <div id='timeline'>
           <Timeline />
         </div>
-        <div className="black-bg" style={{ backgroundImage: `url(${blackbgstraight})` }} id='work'>
+        <div className="black-bg" id='work'>
           <div className='header-projects'>
           <h1>My <span className="projects-highlighth1">Work</span></h1>
           </div>

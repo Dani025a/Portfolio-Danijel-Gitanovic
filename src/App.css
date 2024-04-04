@@ -7,6 +7,7 @@
 .black-bg {
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('./assets/blackbgcrooked.svg');
   min-height: 800px;
   width: 100%;
 }
