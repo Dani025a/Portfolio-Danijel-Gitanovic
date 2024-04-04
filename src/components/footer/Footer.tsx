@@ -7,7 +7,7 @@ import typescrpt from '../../assets/Typescript.png'
 import react from '../../assets/React.png'
 import nodejs from '../../assets/nodejs.png'
 import mysql from '../../assets/mysql.png'
-
+import googlecloud from '../../assets/google-cloud-logo.png'
 
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className='footer-contactme-items'>                
                 <div className='footer-phone'>
                 <img src={phone}></img>
-                <p>+45 23 32 19 17</p>
+                <p><a href={`tel: +45 23 32 19 17`}>+45 23 32 19 17</a></p>
                 </div>
                 <div className='footer-email'>
                 <img src={email}></img>
@@ -47,7 +47,7 @@ const Footer = () => {
           <img src={react}></img>
           <img src={nodejs}></img>
           <img src={mysql}></img>
-
+          <img src={googlecloud}></img>
           </div>
                 </div>
 
