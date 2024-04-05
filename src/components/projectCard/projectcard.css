@@ -121,23 +121,105 @@ text-transform: uppercase;
 
 @media screen and (max-width: 768px) {
     .project-card {
-      width: 100%;
+      width: 300px;
       height: auto;
+      background-color: #D9D9D9;
+      border-radius: 25px;
+      overflow: hidden;
     }
-  
+    
     .images-content {
       width: 100%;
       height: auto;
+      border-radius: 25px 25px 0 0;
     }
-  
-    .name-container, .description-container, .line-divider, .languages, .github-btn-container {
-      margin-left: 20px;
-      margin-right: 20px;
-      max-width: calc(100% - 40px);
+    
+    .name-container {
+        background-color: #FF4820;
+        display: inline-flex;
+        align-items: center;
+        margin: 30px 0px 34px 3px;
+        padding: 1px 20px 1px 20px;
+        justify-content: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 25px;
+        min-height: 38px;
+        max-width: 437px;
+        line-height: 2;
     }
-  
-    .name-container, .description-container {
-      padding: 0 10px;
+    
+    .name-container h1 {
+      color: #000;
+      font-family: "Saira Condensed";
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+    .description-container {
+      padding: 10px 20px;
+    }
+    
+    .description-container p {
+      color: #000;
+      font-family: "Saira Condensed";
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .line-divider {
+      width: 100%;
+      height: 1px;
+      background: #000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .languages {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .languageicon {
+      max-height: 30px;
+      margin: 5px;
+    }
+    
+    .github-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .github-btn {
+      background-color: #FF4820;
+      border-radius: 5px;
+      padding: 8px 16px; 
+      font-size: 16px; 
+      font-weight: 500;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    .github-btn-text {
+      color: #FFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .github-btn:hover {
+      background-color: transparent;
+      border: 2px solid #FF4820;
+    }
+    
+    .github-btn:hover .github-btn-text {
+      color: black;
     }
   
   }
+  
