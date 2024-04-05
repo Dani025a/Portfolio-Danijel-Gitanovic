@@ -92,6 +92,12 @@
     color: #fff;
 
 }
+
+.custom-nav-btn.active {
+    background-color: transparent;
+    border: 2px solid #FF4820;
+}
+
 .custom-hamburger-icon {
     display: none;
     flex-direction: column;

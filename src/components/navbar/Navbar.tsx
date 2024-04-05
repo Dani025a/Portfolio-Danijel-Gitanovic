@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import './navbar.css';
+import ContactPopup from '../contactPopup/ContactPopup';
 
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState('');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [showContactPopup, setShowContactPopup] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,8 +18,8 @@ const NavBar = () => {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     const { top, bottom } = section.getBoundingClientRect();
-                    const threshold = window.innerHeight * 0.25;                    
-                     if (top <= threshold && bottom >= threshold) {
+                    const threshold = window.innerHeight * 0.25;
+                    if (top <= threshold && bottom >= threshold) {
                         currentSection = sectionId;
                         break;
                     }
@@ -43,12 +45,18 @@ const NavBar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const toggleContactPopup = () => {
+        setShowContactPopup(!showContactPopup);
+        setIsMobileMenuOpen(false);
+    };
+
     const scrollToSection = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
         setActiveSection(sectionId);
+        setIsMobileMenuOpen(false);
     };
 
     return (
@@ -69,8 +77,9 @@ const NavBar = () => {
                         <a href="#work" onClick={() => scrollToSection('work')} className={`custom-nav-links ${activeSection === 'work' ? 'active' : ''}`}>WORK</a>
                     </li>
                 </ul>
-                <div className='custom-nav-btn-container'><button className='custom-nav-btn'>
-                    <a className="custom-nav-btn-text">Contact Me</a>
+                <div className='custom-nav-btn-container'>
+                <button className={`custom-nav-btn ${showContactPopup ? 'active' : ''}`} onClick={toggleContactPopup}>
+                    <span className="custom-nav-btn-text">Contact Me</span>
                 </button>
                 </div>
                 <div className={`custom-hamburger-icon`} onClick={toggleMobileMenu}>
@@ -93,12 +102,14 @@ const NavBar = () => {
                             <a href="#work" onClick={() => scrollToSection('work')} className={`custom-nav-links ${activeSection === 'work' ? 'active' : ''}`}>WORK</a>
                         </li>
                     </ul>
-                    <div className='custom-nav-btn-container'><button className='custom-nav-btn'>
-                        <a className="custom-nav-btn-text">Contact Me</a>
-                    </button>
-                    </div>
+                    <div className='custom-nav-btn-container'>
+                <button className={`custom-nav-btn ${showContactPopup ? 'active' : ''}`} onClick={toggleContactPopup}>
+                    <span className="custom-nav-btn-text">Contact Me</span>
+                </button>
+                </div>
                 </div>
             </div>
+            {showContactPopup && <ContactPopup onClose={toggleContactPopup} />}
         </nav>
     );
 };
