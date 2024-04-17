@@ -31,8 +31,13 @@ font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
 }
+.text-projects{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center
+}
 
-.server-time {
+.text-projects p {
 color: #fff;
 font-style: bold;
 font-weight: 700;
