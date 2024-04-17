@@ -8,8 +8,8 @@ border-radius: 25px 25px 25px 25px;
 }
 
 .images-content{
-    width: 512px;
-    max-height: 326px; 
+    max-width: 512px;
+    height: 326px;
     flex-shrink: 0;
     border-radius: 25px 25px 0px 0px;
 }
