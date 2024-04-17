@@ -29,7 +29,7 @@ const ProjectCard = ({ project }: Props) =>
       {project.images.map((iamge, index) => (
   <Carousel.Item key={index}>
     <img className='images-content'
-         src={iamge.image} // Corrected
+         src={iamge.image}
          alt={`Slide ${index}`}
          style={{ width: '100%', cursor: 'pointer' }}
          onClick={() => openModal(iamge.image)}
