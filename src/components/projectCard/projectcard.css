@@ -133,7 +133,11 @@ text-transform: uppercase;
     
     .images-content {
       width: 100%;
-      height: auto;
+      background-color: grey;
+      width: 300px;
+      height: 326px;
+      object-fit: contain;
+      flex-shrink: 0;
       border-radius: 25px 25px 0 0;
     }
     
