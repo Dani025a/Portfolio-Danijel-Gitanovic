@@ -50,7 +50,7 @@ const App = () => {
           <h1>My <span className="projects-highlighth1">Work</span></h1>
           </div>
           <div className='text-projects'>
-          <p>It might take some time to fetch the data, beucases i am using free servers</p>
+          <p>Please be advised that there may be a delay in retrieving the data as I am utilizing servers with limited resources.</p>
           </div>
         <div className="sort-dropdown">
         <select onChange={(e) => handleSortChange(e.target.value)}>
