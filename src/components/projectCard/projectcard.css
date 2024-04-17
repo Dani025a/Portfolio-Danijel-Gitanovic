@@ -10,6 +10,7 @@ border-radius: 25px 25px 25px 25px;
 .images-content {
   width: 100%;
   background-color: grey;
+  width: 512px;
   height: 326px;
   object-fit: contain;
   flex-shrink: 0;
