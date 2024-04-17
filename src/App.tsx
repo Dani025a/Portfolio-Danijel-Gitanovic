@@ -48,8 +48,8 @@ const App = () => {
         <div className="black-bg-straight" id='work'>
           <div className='header-projects'>
           <h1>My <span className="projects-highlighth1">Work</span></h1>
-          <p>It might take some time to fetch the data, beucases i am using free servers</p>
           </div>
+          <p className='server-time'>It might take some time to fetch the data, beucases i am using free servers</p>
         <div className="sort-dropdown">
         <select onChange={(e) => handleSortChange(e.target.value)}>
           <option value={"All"}>All</option>

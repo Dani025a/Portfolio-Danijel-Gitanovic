@@ -32,6 +32,14 @@ line-height: normal;
 text-transform: uppercase;
 }
 
+.server-time {
+color: #fff;
+font-style: bold;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
 .projects-highlighth1 {
   color: #FF4820;
   font-size: 64px;
