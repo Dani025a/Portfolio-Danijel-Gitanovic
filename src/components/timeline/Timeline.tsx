@@ -42,7 +42,7 @@ function Timeline() {
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  href={element.href}
                 >
                   {element.buttonText}
                 </a>

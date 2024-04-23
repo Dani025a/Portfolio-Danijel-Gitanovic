@@ -6,6 +6,7 @@ const timelineElements = [
     buttonText: "More Info",
     description: "Studied databases, system integration, development of large systems, full-stack development, and AI/machine learning.",
     date: "August 2023 - Present",
+    href: "https://kea.dk/en/programmes/top-up-bachelor-degree/software-development",
     icon: "school",
   },
   {
@@ -15,6 +16,7 @@ const timelineElements = [
     buttonText: "Course Details",
     description: "Covered programming fundamentals, web fundamentals, database fundamentals, software design and development fundamentals, programming in C#, and secure programming.",
     date: "April 24, 2023 - June 3, 2023",
+    href: "https://nyledige.dk/kurser/web-programmering-og-grafisk-design/c-udvikler-godkendt-kursus-for-ledige/",
     icon: "school",
   },
   {
@@ -24,6 +26,7 @@ const timelineElements = [
     buttonText: "Watts A/S Website",
     description: "Worked on the Android app, performed maintenance tasks, and contributed to backend development using C# for microservices.",
     date: "August 15, 2022 - October 21, 2022",
+    href: "https://www.watts.dk/",
     icon: "work",
   },
   {
@@ -33,6 +36,7 @@ const timelineElements = [
     buttonText: "Program Details",
     description: "Studied general topics, enterprise organization, system development, programming, and technology. Elective subjects included mobile development and machine learning.",
     date: "September 2020 - January 2023",
+    href: "https://zealand.com/fuldtid/computer-science/",
     icon: "school",
   },
   {
