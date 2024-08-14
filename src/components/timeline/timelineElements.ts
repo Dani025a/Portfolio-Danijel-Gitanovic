@@ -1,7 +1,7 @@
 const timelineElements = [
   {
     id: 1,
-    title: "Software Development Program at KEA",
+    title: "Bachelor's Degree in Software Development at KEA",
     location: "Copenhagen, Denmark",
     buttonText: "More Info",
     description: "Studied databases, system integration, development of large systems, full-stack development, and AI/machine learning.",
@@ -31,7 +31,7 @@ const timelineElements = [
   },
   {
     id: 4,
-    title: "Bachelor's Degree in Computer Science from Zealand",
+    title: "Computer Science at Zealand",
     location: "Næstved, Denmark",
     buttonText: "Program Details",
     description: "Studied general topics, enterprise organization, system development, programming, and technology. Elective subjects included mobile development and machine learning.",
@@ -41,7 +41,7 @@ const timelineElements = [
   },
   {
     id: 5,
-    title: "Involvement in Hofor/Amagerbakke Project",
+    title: "Work Experience at Hofor/Amagerbakke",
     location: "Copenhagen, Denmark",
     date: "2019 - 2020",
     icon: "school",
