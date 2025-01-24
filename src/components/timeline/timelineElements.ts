@@ -1,7 +1,7 @@
 const timelineElements = [
   {
     id: 1,
-    title: "work",
+    title: "Internship at Soundmade",
     location: "Online",
     description: "I developed a cross-platform app with React Native, focusing on UI, API integration, and performance.",
     date: "August 12, 2024 - October 18, 2024",
