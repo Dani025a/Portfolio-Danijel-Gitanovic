@@ -1,13 +1,11 @@
 const timelineElements = [
   {
     id: 1,
-    title: "Bachelor's Degree in Software Development at KEA",
-    location: "Copenhagen, Denmark",
-    buttonText: "More Info",
-    description: "Studied databases, system integration, development of large systems, full-stack development, and AI/machine learning.",
-    date: "August 2023 - Present",
-    href: "https://kea.dk/en/programmes/top-up-bachelor-degree/software-development",
-    icon: "school",
+    title: "work",
+    location: "Online",
+    description: "I developed a cross-platform app with React Native, focusing on UI, API integration, and performance.",
+    date: "August 12, 2024 - October 18, 2024",
+    icon: "work",
   },
   {
     id: 2,
